@@ -13,49 +13,49 @@ Have you ever started your data analysis and ended up with repetitive code? Repe
 
 In this task, we address the issue of repetitive code in Brenda's script. We write a function `convert_csv_to_df` that reads an NPS CSV file and converts it into a DataFrame with a column specifying the source.
 
-[Code for Task 1](#task-01-code)
+[Code for Task 1](#Task-1:-Inspecting-the-Data)
 
 ### Task 2: Verifying the files with the "with" keyword
 
 To ensure that the CSV files are valid, we implement a function `check_csv` that checks if a CSV file contains the required columns: `response_date`, `user_id`, and `nps_rating`. We use the `with` keyword to properly handle file opening and closing.
 
-[Code for Task 2](#task-02-code)
+[Code for Task 2](#Task-2:-Verifying-the-files-with-the-"with"-keyword)
 
 ### Task 3: Putting it together with nested functions
 
 To consolidate data from multiple sources, we create a function `combine_nps_csvs` that takes a dictionary of CSV filenames and their corresponding source types. It validates the CSV files and combines them into a single DataFrame.
 
-[Code for Task 3](#task-03-code)
+[Code for Task 3](#Task-3:-Putting-it-together-with-nested-functions)
 
 ### Task 4: Detractors, Passives, and Promoters
 
 We introduce a function `categorize_nps` that categorizes NPS ratings into detractors, passives, promoters, or invalid based on a predefined rating scale.
 
-[Code for Task 4](#task-04-code)
+[Code for Task 4](#Task-4:-Detractors,-Passives,-and-Promoters)
 
 ### Task 5: Applying our function to a DataFrame
 
 We modify the `convert_csv_to_df` function to include a new column `nps_group`, which categorizes NPS ratings using the `categorize_nps` function. We apply this function to a DataFrame using the `apply` method.
 
-[Code for Task 5](#task-05-code)
+[Code for Task 5](#Task-5:-Applying-our-function-to-a-DataFrame)
 
 ### Task 6: Calculating the Net Promoter Score
 
 We calculate the Net Promoter Score (NPS) by defining a function `calculate_nps` that takes a DataFrame with the `nps_group` column and computes the NPS score.
 
-[Code for Task 6](#task-06-code)
+[Code for Task 6](#Task-6:-Calculating-the-Net-Promoter-Score)
 
 ### Task 7: Breaking down NPS by source
 
 To analyze NPS scores by source type, we create a function `calculate_nps_by_source` that groups the DataFrame by source and applies the `calculate_nps` function to each group.
 
-[Code for Task 7](#task-07-code)
+[Code for Task 7](#Task-7:-Breaking-down-NPS-by-source)
 
 ### Task 8: Adding docstrings
 
 In this task, we add docstrings to the functions `combine_nps_csvs`, `calculate_nps`, and `calculate_nps_by_source` to provide information about their purpose, arguments, and return values.
 
-[Code for Task 8](#task-08-code)
+[Code for Task 8](#Task-8:-Adding-docstrings)
 
 ## Repository Contents
 
@@ -78,7 +78,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Code for tasks
 
-## Task 1: Inspecting the Data {#task-01-code}
+#Task 1: Inspecting the Data
 
 ```python
 # Import pandas with the usual alias
@@ -103,7 +103,7 @@ def convert_csv_to_df(csv_name, source_type):
 convert_csv_to_df("datasets/2020Q4_nps_mobile.csv", "mobile")
 ```
 
-## Task 2: Verifying the files with the "with" keyword {#task-02-code}
+#Task 2: Verifying the files with the "with" keyword
 
 ```python
 def check_csv(csv_name):
@@ -129,7 +129,7 @@ def check_csv(csv_name):
 print(check_csv("datasets/corrupted.csv"))
 ```
 
-## Task 3: Putting it together with nested functions {#task-03-code}
+#Task 3: Putting it together with nested functions
 
 ```python
 def combine_nps_csvs(csvs_dict):
@@ -161,7 +161,7 @@ combined_nps = combine_nps_csvs(my_files)
 print(combined_nps)
 ```
 
-## Task 4: Detractors, Passives, and Promoters {#task-04-code}
+#Task 4: Detractors, Passives, and Promoters
 
 ```python
 def categorize_nps(x):
@@ -190,7 +190,7 @@ def categorize_nps(x):
 print(categorize_nps(8))
 ```
 
-## Task 5: Applying our function to a DataFrame {#task-05-code}
+#Task 5: Applying our function to a DataFrame
 
 ```python
 def convert_csv_to_df(csv_name, source_type):    
@@ -213,7 +213,7 @@ def convert_csv_to_df(csv_name, source_type):
 print(convert_csv_to_df("datasets/2020Q4_nps_mobile.csv", "mobile"))
 ```
 
-## Task 6: Calculating the Net Promoter Score {#task-06-code}
+#Task 6: Calculating the Net Promoter Score
 
 ```python
 def calculate_nps(dataframe):
@@ -236,7 +236,7 @@ q4_nps = combine_nps_csvs(my_files)
 print(calculate_nps(q4_nps))
 ```
 
-## Task 7: Breaking down NPS by source {#task-07-code}
+#Task 7: Breaking down NPS by source
 
 ```python
 def calculate_nps_by_source(dataframe):
@@ -256,7 +256,7 @@ q4_nps = combine_nps_csvs(my_files)
 print(calculate_nps_by_source(q4_nps))
 ```
 
-## Task 8: Adding docstrings {#task-08-code}
+#Task 8: Adding docstrings
 
 ```python
 # Copy and paste your code for the function from Task 3
