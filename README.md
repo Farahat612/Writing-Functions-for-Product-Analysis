@@ -103,7 +103,7 @@ def convert_csv_to_df(csv_name, source_type):
 convert_csv_to_df("datasets/2020Q4_nps_mobile.csv", "mobile")
 ```
 
-# Task 2 code
+### Task 2 code
 
 ```python
 def check_csv(csv_name):
@@ -129,7 +129,7 @@ def check_csv(csv_name):
 print(check_csv("datasets/corrupted.csv"))
 ```
 
-# Task 3 code
+### Task 3 code
 
 ```python
 def combine_nps_csvs(csvs_dict):
@@ -161,7 +161,7 @@ combined_nps = combine_nps_csvs(my_files)
 print(combined_nps)
 ```
 
-# Task 4 code
+### Task 4 code
 
 ```python
 def categorize_nps(x):
@@ -190,7 +190,7 @@ def categorize_nps(x):
 print(categorize_nps(8))
 ```
 
-# Task 5 code
+### Task 5 code
 
 ```python
 def convert_csv_to_df(csv_name, source_type):    
@@ -213,7 +213,7 @@ def convert_csv_to_df(csv_name, source_type):
 print(convert_csv_to_df("datasets/2020Q4_nps_mobile.csv", "mobile"))
 ```
 
-# Task 6 code
+### Task 6 code
 
 ```python
 def calculate_nps(dataframe):
@@ -236,7 +236,7 @@ q4_nps = combine_nps_csvs(my_files)
 print(calculate_nps(q4_nps))
 ```
 
-# Task 7 code
+### Task 7 code
 
 ```python
 def calculate_nps_by_source(dataframe):
@@ -256,7 +256,7 @@ q4_nps = combine_nps_csvs(my_files)
 print(calculate_nps_by_source(q4_nps))
 ```
 
-# Task 8 code
+### Task 8 code
 
 ```python
 # Copy and paste your code for the function from Task 3
