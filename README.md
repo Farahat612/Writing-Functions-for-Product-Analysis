@@ -78,7 +78,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Code for tasks
 
-# Task 1 code
+### Task 1 code
 
 ```python
 # Import pandas with the usual alias
