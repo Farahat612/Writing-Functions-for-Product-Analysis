@@ -78,7 +78,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Code for tasks
 
-#Task 1: Inspecting the Data
+# Task 1: Inspecting the Data
 
 ```python
 # Import pandas with the usual alias
@@ -103,7 +103,7 @@ def convert_csv_to_df(csv_name, source_type):
 convert_csv_to_df("datasets/2020Q4_nps_mobile.csv", "mobile")
 ```
 
-#Task 2: Verifying the files with the "with" keyword
+# Task 2: Verifying the files with the "with" keyword
 
 ```python
 def check_csv(csv_name):
@@ -129,7 +129,7 @@ def check_csv(csv_name):
 print(check_csv("datasets/corrupted.csv"))
 ```
 
-#Task 3: Putting it together with nested functions
+# Task 3: Putting it together with nested functions
 
 ```python
 def combine_nps_csvs(csvs_dict):
@@ -161,7 +161,7 @@ combined_nps = combine_nps_csvs(my_files)
 print(combined_nps)
 ```
 
-#Task 4: Detractors, Passives, and Promoters
+# Task 4: Detractors, Passives, and Promoters
 
 ```python
 def categorize_nps(x):
@@ -190,7 +190,7 @@ def categorize_nps(x):
 print(categorize_nps(8))
 ```
 
-#Task 5: Applying our function to a DataFrame
+# Task 5: Applying our function to a DataFrame
 
 ```python
 def convert_csv_to_df(csv_name, source_type):    
@@ -213,7 +213,7 @@ def convert_csv_to_df(csv_name, source_type):
 print(convert_csv_to_df("datasets/2020Q4_nps_mobile.csv", "mobile"))
 ```
 
-#Task 6: Calculating the Net Promoter Score
+# Task 6: Calculating the Net Promoter Score
 
 ```python
 def calculate_nps(dataframe):
@@ -236,7 +236,7 @@ q4_nps = combine_nps_csvs(my_files)
 print(calculate_nps(q4_nps))
 ```
 
-#Task 7: Breaking down NPS by source
+# Task 7: Breaking down NPS by source
 
 ```python
 def calculate_nps_by_source(dataframe):
@@ -256,7 +256,7 @@ q4_nps = combine_nps_csvs(my_files)
 print(calculate_nps_by_source(q4_nps))
 ```
 
-#Task 8: Adding docstrings
+# Task 8: Adding docstrings
 
 ```python
 # Copy and paste your code for the function from Task 3
